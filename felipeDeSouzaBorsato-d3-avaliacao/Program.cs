@@ -80,7 +80,7 @@ namespace felipeDeSouzaBorsato_d3_avaliacao
                         User rUser = new(rNome, rEmail, rPassword);
 
                         controller.RegisterUser(rUser);
-                        Console.WriteLine("Usuário registrado\n");
+                        
                         break;
                 }
 

@@ -40,12 +40,14 @@ namespace felipeDeSouzaBorsato_d3_avaliacao.Controllers
         {
             if(userRepository.SearchEmail(user.Email) != null)
             {
-                Console.WriteLine("Email já cadastrado!");
+                Console.WriteLine("\nEmail já cadastrado!\n");
                 return;
             }
             user.Senha = HashPassword(user.Senha, 10);
 
             userRepository.SaveUser(user);
+
+            Console.WriteLine("\nUsuário registrado\n");
         }
     }
 }
